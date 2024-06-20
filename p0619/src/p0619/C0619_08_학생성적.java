@@ -20,6 +20,8 @@ public class C0619_08_학생성적 {
 			System.out.println("1. 성적입력");
 			System.out.println("2. 성적출력");
 			System.out.println("3. 성적수정");
+			System.out.println("4. 학생검색");
+			System.out.println("5. 등수처리");
 			System.out.println("0. 프로그램 종료");
 			System.out.println("-----------------------------");
 			System.out.println("원하는 번호를 입력하세요 >> ");
@@ -95,7 +97,7 @@ public class C0619_08_학생성적 {
 				System.out.println();
 				break;
 			case 3:
-				System.out.println("            [ 학생검색 ]");
+				System.out.println("            [ 학생수정 ]");
 				System.out.println("-----------------------------------");
 				System.out.println("검색하고자 하는 학생 이름을 입력하세요.");
 				String search = scan.nextLine();
@@ -166,6 +168,47 @@ public class C0619_08_학생성적 {
 //				
 				break;
 //				
+			case 4:
+				System.out.println("            [ 학생검색 ]");
+				System.out.println("-----------------------------------");
+				System.out.println("검색하고자 하는 학생 이름을 입력하세요.");
+				String search2 = scan.nextLine();
+				System.out.println("입력이름 : "+search2);
+				
+				//검색
+				int s_temp_no = -1;
+				for(int i=0;i<s_count;i++) {
+					if(name[i].equals(search2)) {
+						s_temp_no=i;
+						break;
+					}
+				}
+				
+				if(s_temp_no==-1) {
+					System.out.println("찾는 학생이 없습니다. 다시 입력하세요.");
+				}else {
+					System.out.printf("%s 학생이 검색되었습니다.",search2);
+					System.out.println();
+					System.out.println("=======================================================");
+					System.out.println("학번\t이름\t국어\t영어\t수학\t총점\t평균\t등수\n");
+					System.out.println("-------------------------------------------------------");
+					System.out.printf("%s\t%s\t",stuNo[s_temp_no],name[s_temp_no]);
+					for(int j=0;j<4;j++) {
+						System.out.printf("%d\t",score[s_temp_no][j]);
+					}
+					System.out.printf("%.2f\t%d\n",avg[s_temp_no],rank[s_temp_no]);
+					System.out.println("=======================================================");
+					
+				}
+				break;
+				
+			case 5:
+				System.out.println("등수처리~~~~~~");
+				
+				
+				
+				break;
+				
 			case 0:
 				System.out.println("[ 프로그램 종료 ]");
 				System.out.println("프로그램을 종료합니다.");
