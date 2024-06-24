@@ -101,8 +101,6 @@ public class C0620_학생성적클래스 {
 				}
 				System.out.println();
 				
-				
-				
 				break;
 				
 				
