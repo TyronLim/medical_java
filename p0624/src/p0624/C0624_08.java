@@ -7,13 +7,13 @@ public class C0624_08 {
 //		Stu_score stu;
 //		stu.kor = 100;	// 안 됨
 		
-		Stu_score s = new Stu_score("s0001","홍길동",100,99,90);
-		System.out.println("합계 : "+s.total);
-		System.out.println("평균 : "+s.avg);
-		Stu_score s2 = new Stu_score();
-		s.kor = 100;
-		
-		
+//		Stu_score s = new Stu_score("s0001","홍길동",100,99,90);
+//		System.out.println("합계 : "+s.total);
+//		System.out.println("평균 : "+s.avg);
+//		Stu_score s2 = new Stu_score();
+//		s.kor = 100;
+//		
+//		
 		
 	}
 }

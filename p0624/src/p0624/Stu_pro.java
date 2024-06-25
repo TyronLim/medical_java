@@ -22,24 +22,24 @@ public class Stu_pro {
 		return choice;
 	} // stu_screen
 	
-	void stu_input(stu_score[] sc) {
-		while(true) {
-		s_count = Stu_score.count;
-		System.out.println("학생 성적 입력");
-		System.out.println("학생의 이름을 입력하세요.");
-		String name = scan.nextLine();
-		System.out.println("국어 점수를 입력하세요.");
-		int kor = scan.nextInt();
-		System.out.println("영어 점수를 입력하세요.");
-		int eng = scan.nextInt();
-		System.out.println("수학 점수를 입력하세요.");
-		int math = scan.nextInt();
-		
-		ss[s_count]= new Stu_score()
-		
-		
-		}//while
-	}//stu_input
+//	void stu_input(stu_score[] sc) {
+//		while(true) {
+//		s_count = Stu_score.count;
+//		System.out.println("학생 성적 입력");
+//		System.out.println("학생의 이름을 입력하세요.");
+//		String name = scan.nextLine();
+//		System.out.println("국어 점수를 입력하세요.");
+//		int kor = scan.nextInt();
+//		System.out.println("영어 점수를 입력하세요.");
+//		int eng = scan.nextInt();
+//		System.out.println("수학 점수를 입력하세요.");
+//		int math = scan.nextInt();
+//		
+//		ss[s_count]= new Stu_score()
+//		
+//		
+//		}//while
+//	}//stu_input
 	
 	
 	

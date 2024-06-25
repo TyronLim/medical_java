@@ -1,8 +1,9 @@
 package p0624;
 import java.util.Scanner;
 public class Stu_process {
-	int s_count = 0; //Stu_score count사용
 	
+	
+	int s_count = 0; //Stu_score count사용
 	Scanner scan = new Scanner(System.in);
 	String[] title = {"학번","이름","국어","영어","수학","합계","평균","등수"};
 	String stuNo,name;

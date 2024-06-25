@@ -4,7 +4,17 @@ import java.util.Date;
 import java.text.SimpleDateFormat;
 
 public class Stu_score {
-
+	
+	static int count; // 클래스 변수: 모든 객체가 공통으로 사용
+	String stuNo;
+	String name;
+	int kor;
+	int eng;
+	int math;
+	int total;
+	double avg;
+	int rank;
+	
 	{// 초기화 블럭
 		count++;
 		Date d = new Date();
@@ -26,16 +36,7 @@ public class Stu_score {
 		total = kor+eng+math;
 		avg = total/3.0;
 	}
-	
-	static int count; // 클래스 변수: 모든 객체가 공통으로 사용
-	String stuNo;
-	String name;
-	int kor;
-	int eng;
-	int math;
-	int total;
-	double avg;
-	int rank;
+
 	
 	
 	
