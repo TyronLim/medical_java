@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Scanner;
 
+import p0628.Card.Kind;
+
 public class C0628_10 {
 	public static void main(String[] args) {
 		
@@ -13,7 +15,7 @@ public class C0628_10 {
 		
 		
 		ArrayList<Card> list = new ArrayList();
-		list.add(new Card(1,"SPADE"));
+//		list.add(new Card(1,Kind.SPADE));
 		list.add(new Card(1,"DIAMOND"));
 		list.add(new Card(3,"Spade"));
 		list.add(new Card(7,"spade"));

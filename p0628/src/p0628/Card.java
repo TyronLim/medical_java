@@ -3,10 +3,10 @@ package p0628;
 public class Card {
 
 	
-//	enum Kind{SPADE,DIAMOND,HEART,CLOVER}	
+	enum Kind{SPADE,DIAMOND,HEART,CLOVER} // Spade,SPADE,spade 를 	
 	
 	private int number;
-	private String kind;
+	private String kind;	
 	
 	Card(){}
 	Card(int number,String kind){

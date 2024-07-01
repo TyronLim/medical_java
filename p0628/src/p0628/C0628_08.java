@@ -29,7 +29,7 @@ public class C0628_08 {
 //		HashSet ha = new HashSet();
 		
 		Object obj3 = map.get("set");
-		HashSet set = (HashSet).obj3;
+//		HashSet set = (HashSet).obj3;
 		
 		Iterator it = set.iterator();
 		while(it.hasNext()) {
